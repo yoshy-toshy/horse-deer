@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>馬鹿判定器</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+  <div class="title">馬鹿判定器</div>
+
+  <div class="main">
+    <div class="area selected">
+      <img id="image" z class="image" src="{{img_path}}" />
+    </div>
+
+    <div class="area">
+      <div class="answer">{{answer}}</div>
+      <div id="result" class="result">
+        <span>{{detail}}</span>
+      </div>
+    </div>
+    <div>
+
+      <div class="area">
+        <div class="button" onclick="window.location='/';">ほかの画像で試す</div>
+      </div>
+
+    </div>
+  </div>
+  <div class="footer">Developed by TOSHY</div>
+</body>
+
+</html>

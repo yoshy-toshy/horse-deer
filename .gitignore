@@ -1,0 +1,6 @@
+data/validate/0/
+data/validate/1/
+data/train/0/
+data/train/1/
+static/uploads/*
+!static/uploads/.gitkeep

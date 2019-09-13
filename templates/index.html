@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>馬鹿判定器</title>
+  <meta name="og:title" content="馬鹿判定器" />
+  <meta name="og:description" content="AIが写真を分析して馬か鹿かを判定します" />
+  <meta name="og:image" content="{{thumbnail_path}}" />
+  <meta name="twitter:card" content="summary" />
+  <script type="text/javascript" src="/static/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="/static/index.js"></script>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+  <div class="title">馬鹿判定器</div>
+
+  <div id="id_cover_image_area" class="cover-image-area">
+    <img class="image" src="./static/img/main.png" />
+  </div>
+
+  <div class="main">
+    <form action="/" method="post" enctype="multipart/form-data" class="form" onsubmit="judge()">
+
+      <div id="id_selected_image_area" class="area selected hidden">
+        <img id="id_image" class="image" src="" />
+      </div>
+
+      <div class="description">選択した画像が{{labels}}を判定します</div>
+
+      <div class="area">
+        <div class="area">
+          <div id="id_select_file_dummy" class="button disabled hidden"></div>
+          <label id="id_select_file" class="button main">
+            <div id="id_select_file_text"></div>
+            <input type="file" id="id_file" name="file" accept="image/*" onchange="setImage()" class="hidden" readonly="readonly" />
+          </label>
+        </div>
+        <div class="area">
+          <input type="submit" id="id_upload_button" class="button main" value="" disabled>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+  <div class="footer">Developed by TOSHY</div>
+
+</body>
+
+</html>
