@@ -3,4 +3,4 @@ gunicorn==19.9.0
 numpy==1.16.3
 opencv-python==3.4.5.20
 requests==2.22.0
-tensorflow==1.13.1
+tensorflow==1.15.2
